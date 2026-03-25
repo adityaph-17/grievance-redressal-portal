@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - College Grievance Portal</title>
+    <link rel="stylesheet" href="/grievance-portal/css/std-signup-style.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <div class="logo-area">
+            <img src="/grievance-portal/images/Logo1-removebg-preview.png" alt="College Logo" class="logo-icon">
+            <span class="logo-text">Govt Polytechnic Jintur</span>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-card">
+            <h2>ADMIN LOGIN</h2>
+            <form action="admin-login.php" method="post">
+                <label for="admin_id">Admin ID</label>
+                <input type="text" name="admin_id" id="admin_id" required placeholder="Enter Admin ID">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Enter admin password">
+
+                <button type="submit" class="btn-primary" name="login">Login</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

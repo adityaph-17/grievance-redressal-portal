@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login - College Grievance Portal</title>
+  <link rel="stylesheet" href="css/std-login-style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="logo-area">
+      <img src="images/Logo1-removebg-preview.png" alt="College Logo" class="logo-icon">
+      <span class="logo-text">Govt Polytechnic Jintur</span>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="login-card">
+      <h2>Student Login</h2>
+      <form action="std-login.php" method="post">
+        <label for="student_id">Student ID [Enrollment]</label>
+        <input type="text" name="student_id" id="student_id" required placeholder="Enter your student ID">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Enter your password">
+
+        <button type="submit" class="btn-primary" name="Login">Login</button>
+      </form>
+
+      <p class="signup-link">
+        Don't have an account? <a href="std-signup.html">Sign Up</a>
+      </p>
+      <p class="forgot-link">
+        <a href="forgot-password.php">Forgot Password?</a>
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

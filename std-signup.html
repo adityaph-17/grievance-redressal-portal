@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Signup - College Grievance Portal</title>
+  <link rel="stylesheet" href="css/std-signup-style.css">
+</head>
+
+<body>
+
+  <header class="top-bar">
+    <div class="logo-area">
+      <img src="/grievance-portal/images/Logo1-removebg-preview.png" alt="College Logo" class="logo-icon">
+      <span class="logo-text">Govt Polytechnic Jintur</span>
+    </div>
+  </header>
+
+  <section class="login-section">
+    <div class="login-card">
+      <h2>Student Signup</h2>
+
+      <form action="std-signup.php" method="post">
+
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" placeholder="Enter your full name" required>
+
+        <label for="student_id">Student ID [Enrollment]</label>
+        <input type="text" name="student_id" maxlength="11" inputmode="numeric"
+          oninput="this.value = this.value.replace(/[^0-9]/g,'')" placeholder="Enter Enrollment number" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter email" required>
+
+        <label>Course</label>
+        <select name="course" required>
+          <option value="">-- Select Course --</option>
+          <option value="Computer">Computer</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Civil">Civil</option>
+        </select>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter strong password (A,a,0,@)"
+          pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,15}$"
+          title="Password must be 8-15 characters and include letters, numbers, and symbols" required>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" placeholder="Enter same password" required>
+
+        <button type="submit" class="btn-primary" name="Signup">Signup</button>
+      </form>
+
+      <p class="signup-link">
+        Already have an account? <a href="/grievance-portal/std-login.html">Login</a>
+      </p>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
