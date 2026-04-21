@@ -1,143 +1,171 @@
 🎓 Grievance Redressal Portal for College
 
-📌 Project Overview
-
-The Grievance Redressal Portal is a web-based system developed to provide a structured and transparent platform for students to submit, manage, and track their complaints within a college environment.
-
-The system ensures proper communication between students and administration while maintaining security through OTP-based verification and role-based access control.
+A modern and secure web-based system developed using PHP and MySQL to manage student complaints efficiently within a college environment.
+The portal ensures transparency, structured communication, and secure access using OTP verification.
 
 ⸻
 
-🎯 Objectives
-	•	To provide an easy platform for complaint submission
-	•	To ensure transparency in grievance handling
-	•	To reduce manual work and paperwork
-	•	To allow students to track complaint status in real-time
-	•	To help administrators manage and resolve complaints efficiently
+📱 About The Project
+
+The Grievance Redressal Portal is designed to provide a centralized platform where students can:
+
+* Submit complaints easily
+* Track complaint status in real-time
+* Communicate with administration
+* Ensure transparency in grievance handling
+
+It simplifies the complaint management process and reduces manual work.
 
 ⸻
 
-🚀 Key Features
+✨ Features
 
-👨‍🎓 Student Module
-	•	Student Registration with OTP Verification
-	•	Secure Login using Enrollment ID & Password
-	•	Student Dashboard with Complaint Summary
-	•	Submit Complaint with:
-	•	Category selection
-	•	Subject & Description
-	•	File Upload (Supporting Documents)
-	•	Track Complaint Status:
-	•	Pending
-	•	In Progress
-	•	Resolved
-	•	Rejected
-	•	Reopen Complaint with Reason
-	•	Password Reset using OTP
-	•	Delete Account with OTP Verification
+🔹 1. Student Module
 
-⸻
-
-👨‍💼 Admin Module
-	•	Secure Admin Login
-	•	Dashboard with Complaint Analytics:
-	•	Total Complaints
-	•	Pending
-	•	In Progress
-	•	Resolved
-	•	Rejected
-	•	Reopened
-	•	View All Complaints in Tabular Format
-	•	Search & Filter Complaints
-	•	Update Complaint Status
-	•	View Reopened Complaints
-	•	Delete Old Complaints:
-	•	Resolved (> 1 year)
-	•	Rejected (> 1 year)
+* Student Registration with OTP Verification
+* Secure Login (Enrollment ID & Password)
+* Dashboard with Complaint Summary
+* Submit Complaint with:
+    * Category Selection
+    * Subject & Description
+    * File Upload (Documents)
+* Track Complaint Status:
+    * Pending
+    * In Progress
+    * Resolved
+    * Rejected
+* Reopen Complaint with Reason
+* Password Reset using OTP
+* Delete Account with OTP Verification
 
 ⸻
 
-🔄 System Workflow
-	1.	User visits Home Page
-	2.	Student registers with required details
-	3.	OTP is sent to registered email
-	4.	OTP verification and account creation
-	5.	Student logs in using credentials
-	6.	Access dashboard
-	7.	Submit complaint
-	8.	Admin reviews and updates status
-	9.	Student tracks complaint or reopens if not satisfied
+🔹 2. Admin Module
+
+* Secure Admin Login
+* Dashboard with Analytics:
+    * Total Complaints
+    * Pending / In Progress / Resolved / Rejected / Reopened
+* View Complaints in Table Format
+* Search & Filter Complaints
+* Update Complaint Status
+* Manage Reopened Complaints
+* Delete Old Complaints (after 1 year)
 
 ⸻
 
-🛠️ Technology Stack
-Layer:          Technology Used
-Frontend:        HTML, CSS
-Backend:         PHP
-Database:        MySQL
-Email:           PHPMailer
-Server:          XAMPP
-DB Tool:         phpMyAdmin
+🔹 3. System Workflow
+
+1. User visits Home Page
+2. Student registers
+3. OTP sent to email
+4. Account verification
+5. Login to the dashboard
+6. Submit a complaint
+7. Admin reviews complaint
+8. Status updated
+9. Student tracks or reopens complaint
+
+⸻
+
+🔹 4. Security Features
+
+* OTP-based Email Verification
+* Secure Authentication
+* Role-Based Access Control
+* Data Privacy Protection
+
+⸻
+
+🔹 5. Clean UI
+
+* Simple and user-friendly interface
+* Easy navigation
+* Responsive layout
+
+⸻
+
+🛠 Technologies Used
+
+* PHP
+* MySQL
+* HTML
+* CSS
+* PHPMailer (Email OTP)
+* XAMPP Server
+* phpMyAdmin
 
 ⸻
 
 📄 Project Documents
-	•	📘 Project Report → docs/Report.pdf
-	•	📊 Presentation → docs/Presentation.pptx
-	•	⚙️ Installation Guide → docs/Installation_Guide.md
+
+* 📘 Project Report → documentation/(aditya) grivance portal report.pdf
+* 📊 Presentation → documentation/Grievance-Redressal-Portal-for-College(final) (1).pptx
+* ⚙️ Installation Guide → documentation/Installation_Guide.md
 
 ⸻
 
-⚙️ Installation Steps (Quick)
-	1.	Clone Repository
-  https://github.com/adityaph-17/grievance-redressal-portal.git
-  	2.	Move to XAMPP htdocs folder
-	3.	Start Apache & MySQL
-	4.	Import Database in phpMyAdmin
-	5.	Run in browser:
-  http://localhost/your-project-folder
+⚙️ Installation Steps
 
-⸻
+1. Clone the repository
 
-🔐 Security Features
-	•	OTP-based Email Verification
-	•	Secure Authentication System
-	•	Role-Based Access Control
-	•	Data Privacy (Student-specific data access)
+https://github.com/adityaph-17/grievance-redressal-portal.git
+
+2. Move project to htdocs folder (XAMPP)
+3. Start Apache & MySQL
+4. Import database using phpMyAdmin
+5. Run in browser:
+
+http://localhost/your-project-folder
 
 ⸻
 
 🧪 Testing
-	•	Verified login system
-	•	OTP email functionality tested
-	•	Complaint submission & tracking tested
-	•	Admin status update tested
+
+* Login system tested
+* OTP email functionality verified
+* Complaint submission tested
+* Complaint tracking tested
+* Admin operations tested
 
 ⸻
 
 ⚠️ Limitations
-	•	Requires internet for email OTP
-	•	Basic UI (can be improved)
-	•	No mobile app version
+
+* Requires internet for OTP emails
+* Basic UI design
+* No mobile application
 
 ⸻
 
-🔮 Future Enhancements
-	•	Mobile Application Integration
-	•	Real-time Notifications (SMS/Push)
-	•	AI-based Complaint Categorization
-	•	Advanced Analytics Dashboard
+🔮 Future Improvements
+
+* Mobile App Integration 📱
+* Real-time Notifications (SMS / Push)
+* AI-based Complaint Categorization 🤖
+* Advanced Analytics Dashboard
 
 ⸻
 
-👨‍💻 Author
+👨‍💻 Developer
 
-Aditya Halne and supporting team
+Developed by Aditya Halne | Web Development
 
 ⸻
 
-📜 License
+🔒 Privacy & Security
 
-This project is developed for academic purposes only.
-:::
+* No unnecessary data collection
+* Secure data handling
+* Role-based access system
+* Safe to use within a college environment
 
+The software is provided “as is” without any warranty.
+
+⸻
+
+⭐ If you like this project, consider giving it a star!
+
+⸻
+
+–––––––––– THANK YOU ———————–
