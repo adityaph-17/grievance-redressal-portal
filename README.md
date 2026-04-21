@@ -46,7 +46,7 @@ It simplifies the complaint management process and reduces manual work.
 * Dashboard with Analytics:
     * Total Complaints
     * Pending / In Progress / Resolved / Rejected / Reopened
-* View Complaints in Table Format
+* View Complaints in Tabular Format
 * Search & Filter Complaints
 * Update Complaint Status
 * Manage Reopened Complaints
@@ -149,7 +149,7 @@ http://localhost/your-project-folder
 
 👨‍💻 Developer
 
-Developed by Aditya Halne | Web Development
+Developed by Aditya Halne and supporting team | Web Development
 
 ⸻
 
@@ -168,4 +168,6 @@ The software is provided “as is” without any warranty.
 
 ⸻
 
-–––––––––– THANK YOU ———————–
+🙏 THANK YOU
+
+⸻
