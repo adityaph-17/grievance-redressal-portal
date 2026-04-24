@@ -76,8 +76,8 @@ if ($student_id_input == $session_student_id && password_verify($password_input,
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'halneaditya07@gmail.com';
-            $mail->Password   = 'qnnmcnlpfyzinjky';
+            $mail->Username   = ‘YOUR_EMAIL';
+            $mail->Password   = ‘YOUR_EMAIL_PASSWORD';
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
@@ -185,8 +185,8 @@ mysqli_stmt_close($stmt2);
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'halneaditya07@gmail.com';
-            $mail->Password   = 'qnnmcnlpfyzinjky';
+            $mail->Username   = ‘YOUR_EMAIL';
+            $mail->Password   = ‘YOUR_EMAIL_PASSWORD';
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 

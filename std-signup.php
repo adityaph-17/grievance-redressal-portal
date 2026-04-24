@@ -55,8 +55,8 @@ mysqli_stmt_close($check_stmt);
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'halneaditya07@gmail.com';
-        $mail->Password   = 'qnnmcnlpfyzinjky';
+        $mail->Username   = ‘YOUR_EMAIL';
+        $mail->Password   = ‘YOUR_EMAIL_PASSWORD';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
