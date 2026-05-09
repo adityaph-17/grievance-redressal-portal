@@ -1,66 +1,167 @@
-⚙️ Installation Guide
+# ⚙️ Installation Guide  
+# Grievance Redressal Portal
 
-Grievance Redressal Portal
+This guide will help you install and run the **Grievance Redressal Portal** on your local machine using XAMPP.
 
-⸻
+---
 
-📌 Prerequisites
+# 📌 Prerequisites
 
-Make sure the following are installed:
-	•	XAMPP (Apache & MySQL)
-	•	Web Browser (Chrome/Edge)
-	•	Git (optional)
+Before starting, make sure the following software is installed on your system:
 
-⸻
+- ✅ XAMPP (Apache & MySQL)
+- ✅ Web Browser (Google Chrome / Microsoft Edge)
+- ✅ Git *(Optional)*
 
-📥 Step 1: Clone Repository: https://github.com/adityaph-17/grievance-redressal-portal.git
-OR download ZIP and extract.
+---
 
-📁 Step 2: Move Project Folder
-	•	Copy project folder
-	•	Paste inside:
-         C:\xampp\htdocs\
+# 📥 Step 1: Download the Project
 
-🗄️ Step 3: Setup Database
-	1.	Open XAMPP Control Panel
-	2.	Start Apache and MySQL
-	3.	Open browser and go to:
-        http://localhost/phpmyadmin
-    4.	Create new database:
-        grievance_portal
-    5.	Import SQL file:
-	•	Click Import
-	•	Select .sql file from project
-	•	Click Go
+## Option 1: Clone Repository using Git
 
-⚙️ Step 4: Configure Database Connection
+```bash
+git clone https://github.com/adityaph-17/grievance-redressal-portal.git
+```
 
-Open config file (example: config.php) and update:
+## Option 2: Download ZIP
+
+- Open the GitHub repository
+- Click **Code → Download ZIP**
+- Extract the ZIP file
+
+---
+
+# 📁 Step 2: Move Project Folder
+
+1. Copy the project folder
+2. Paste it inside the XAMPP `htdocs` directory:
+
+```text
+C:\xampp\htdocs\
+```
+
+Example:
+
+```text
+C:\xampp\htdocs\grievance-redressal-portal
+```
+
+---
+
+# 🗄️ Step 3: Setup Database
+
+## 1. Start XAMPP Services
+
+Open **XAMPP Control Panel** and start:
+
+- Apache
+- MySQL
+
+---
+
+## 2. Open phpMyAdmin
+
+Open your browser and visit:
+
+```text
+http://localhost/phpmyadmin
+```
+
+---
+
+## 3. Create Database
+
+Create a new database named:
+
+```text
+grievance_portal
+```
+
+---
+
+## 4. Import SQL File
+
+1. Click on the newly created database
+2. Open the **Import** tab
+3. Select the `.sql` file from the project folder
+4. Click **Go**
+
+---
+
+# ⚙️ Step 4: Configure Database Connection
+
+Open the database configuration file  
+(example: `config.php`)
+
+Update the following credentials:
+
+```php
+<?php
+
 $host = "localhost";
 $user = "root";
 $password = "";
 $database = "grievance_portal";
 
-📧 Step 5: Configure Email (PHPMailer)
-	1.	Open mail configuration file
-	2.	Add your email credentials:
-        $mail->Username = "your-email@gmail.com";
-        $mail->Password = "your-app-password";
+?>
+```
 
-    ⚠️ Use Gmail App Password, not your real password.
+---
 
-▶️ Step 6: Run Project
+# 📧 Step 5: Configure Email (PHPMailer)
 
-Open browser and go to:
-http://localhost/your-project-folder
+Open the mail configuration file and update your Gmail credentials:
 
+```php
+$mail->Username = "your-email@gmail.com";
+$mail->Password = "your-app-password";
+```
 
-🛠️ Troubleshooting
-	•	Apache not starting → Check port (80/443)
-	•	MySQL error → Restart XAMPP
-	•	Email not sending → Check App Password
-	•	Database not connecting → Verify config file
+> ⚠️ Important:  
+> Use a **Gmail App Password** instead of your actual Gmail password.
 
-✅ System Ready
+---
 
-Your project should now be running successfully 🎉
+# ▶️ Step 6: Run the Project
+
+Open your browser and visit:
+
+```text
+http://localhost/grievance-redressal-portal
+```
+
+---
+
+# 🛠️ Troubleshooting
+
+- **Apache not starting** → Check if port 80/443 is already in use  
+- **MySQL error** → Restart XAMPP and start MySQL again  
+- **Email not sending** → Verify Gmail App Password  
+- **Database connection failed** → Check credentials in `config.php`  
+- **Page not loading** → Ensure project folder is inside `htdocs`
+
+```text
+C:\xampp\htdocs\grievance-redressal-portal
+```
+
+Open project:
+
+```text
+http://localhost/grievance-redressal-portal
+```
+
+---
+
+# ✅ System Ready
+
+Your **Grievance Redressal Portal** should now be running successfully 🎉
+
+---
+
+# 📌 Repository
+
+GitHub Repository:
+
+```text
+https://github.com/adityaph-17/grievance-redressal-portal
+```
